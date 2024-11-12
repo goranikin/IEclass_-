@@ -24,7 +24,7 @@ export const Calender = ({
         ))}
 
         {[...Array(14)].map((_, index) => (
-          <div key={index} className='p-[10px] border h-[200px]'>
+          <div key={index} className='p-[10px] border h-[150px]'>
             {index + 1}
             {index + 1 === 5 && (
               <>
