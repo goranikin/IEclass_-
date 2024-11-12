@@ -11,7 +11,7 @@ export const Modal1= ({show, onClose, subjectName}: ModalProps) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="text-black bg-white p-6 rounded-lg w-[1200px] h-[800px]">
-        <p className={`${subjectName === '통계학' ? 'bg-yellow-500' : 'bg-blue-900'} text-2xl mb-4 border-gray-400 border-2`}>과목: <span className="font-bold">{subjectName}</span></p>
+        <p className={`${subjectName === '통계학' ? 'bg-yellow-500' : 'bg-blue-900'} text-2xl mb-4 border-gray-400 border-2 text-white`}>과목: <span className="font-bold">{subjectName}</span></p>
         <div className="flex justify-center h-[650px]">
           <div className="flex-grow border-r-gray-400 border-r-2">
             <p className="font-bold mb-3 p-3 border-gray-400 border-b-2">영상 강의 목록</p>
