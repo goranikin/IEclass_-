@@ -20,7 +20,7 @@ export const MainPage = () => {
     <div className="flex h-screen w-screen bg-white">
       <Sidebar/>
       <div className="flex-grow p-6">
-        <Calender/>
+        <Calender openModal={openModal}/>
         <SubjectCards openModal={openModal}/>
       </div>
       <Modal1 show={!!selectedSubject} onClose={closeModal} subjectName={selectedSubject} />

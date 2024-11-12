@@ -20,7 +20,7 @@ export const SubjectCards = ({
           <div key={subject.name} className={`${subject.color}
           text-3xl text-white p-[20px] h-[150px] text-center rounded-md m-1
           flex items-center justify-center
-          cursor-pointer duration-300 hover:bg-opacity-60 
+          cursor-pointer duration-200 hover:bg-opacity-60 
           `}
           onClick={() => openModal(subject.name)}>
             <div className="bg-white text-black px-4 py-2 rounded-md">

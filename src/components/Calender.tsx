@@ -1,5 +1,7 @@
 
-export const Calender = () => {
+export const Calender = ({
+                           openModal,
+                         }: {openModal: (subjectName: string) => void}) => {
   return (
     <div className="mb-7">
       {/* Calendar Header */}
@@ -22,9 +24,42 @@ export const Calender = () => {
         ))}
 
         {[...Array(14)].map((_, index) => (
-            <div key={index} className='p-[10px] border h-[200px]'>
-              {index +1}
-            </div>
+          <div key={index} className='p-[10px] border h-[200px]'>
+            {index + 1}
+            {index + 1 === 5 && (
+              <>
+                <div className="border-sky-500 border-[2px] bg-sky-500 bg-opacity-60 m-0.5 text-[14px]
+                cursor-pointer duration-200 hover:bg-opacity-30"
+                     onClick={() => openModal("수학2")}
+                >
+                  영상 시청 마감 09:30
+                </div>
+                <div className="border-purple-600 border-[2px] bg-purple-600 bg-opacity-60 m-0.5 text-[14px]
+                cursor-pointer duration-200 hover:bg-opacity-30"
+                     onClick={() => openModal("물리학2")}
+                >
+                  과제 마감 15:00
+                </div>
+                <div className="border-blue-900 border-[2px] bg-blue-900 bg-opacity-60 m-0.5 text-[14px]
+                cursor-pointer duration-200 hover:bg-opacity-30"
+                     onClick={() => openModal("물리학실험2")}
+                >
+                  과제 마감 23:59
+                </div>
+              </>
+            )}
+
+            {index + 1 === 9 && (
+              <>
+                <div className="border-yellow-500 border-[2px] bg-yellow-500 bg-opacity-60 m-0.5 text-[14px]
+                cursor-pointer duration-200 hover:bg-opacity-30"
+                     onClick={() => openModal("통계학")}
+                >
+                  과제 마감 15:00
+                </div>
+              </>
+            )}
+          </div>
         ))}
       </div>
     </div>
