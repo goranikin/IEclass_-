@@ -1,10 +1,10 @@
 
 export const Calender = () => {
   return (
-    <>
+    <div className="mb-10">
       {/* Calendar Header */}
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-3xl font-bold text-black">2024년 12월 1-2주차</h1>
+        <p className="text-3xl font-bold text-black">2024년 12월 1-2주차</p>
         <div className="flex space-x-3 items-center">
           <button className="bg-gray-500 px-3 py-1 rounded text-3xl">&larr;</button>
           <button className="bg-gray-500 px-3 py-1 rounded text-3xl">&rarr;</button>
@@ -27,6 +27,6 @@ export const Calender = () => {
             </div>
         ))}
       </div>
-    </>
+    </div>
   )
 }
