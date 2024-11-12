@@ -1,7 +1,7 @@
 
 export const Calender = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-7">
       {/* Calendar Header */}
       <div className="flex justify-between items-center mb-4">
         <p className="text-3xl font-bold text-black">2024년 12월 1-2주차</p>

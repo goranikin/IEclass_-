@@ -10,15 +10,19 @@ const subjects = [
   { name: '학생자율세미나', color: 'bg-red-500' },
 ];
 
-export const SubjectCards = () => {
+export const SubjectCards = ({
+  openModal,
+                             }: {openModal: (subjectName: string) => void}) => {
   return (
     <>
-      {/* Subject Cards Grid */}
       <div className='grid grid-cols-[repeat(4,minmax(150px,1fr))] gap-px'>
         {subjects.map((subject) => (
           <div key={subject.name} className={`${subject.color}
-          text-3xl text-white p-[20px] h-[150px] text-center rounded-md
-          flex items-center justify-center`}>
+          text-3xl text-white p-[20px] h-[150px] text-center rounded-md m-1
+          flex items-center justify-center
+          cursor-pointer duration-300 hover:bg-opacity-60 
+          `}
+          onClick={() => openModal(subject.name)}>
             <div className="bg-white text-black px-4 py-2 rounded-md">
               {subject.name}
             </div>
