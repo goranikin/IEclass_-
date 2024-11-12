@@ -1,12 +1,13 @@
 import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {MainPage} from "./pages/main.tsx";
 
 function App() {
 
-  const Router = createBrowserRouter([
+  const routers = createBrowserRouter([
     {
       path: "/",
-      element: <></>
+      element: <MainPage/>
     },
     {
       path: "/detail",
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={Router}/>
+      <RouterProvider router={routers} />
     </>
   )
 }
