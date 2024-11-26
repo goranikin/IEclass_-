@@ -1,10 +1,10 @@
-import {Sidebar} from "../components/Sidebar.tsx";
-import {Calender} from "../components/Calender.tsx";
-import {SubjectCards} from "../components/SubjectCards.tsx";
+import {Sidebar} from "../../components/Sidebar.tsx";
+import {Calender} from "../../components/Calender.tsx";
+import {SubjectCards} from "../../components/SubjectCards.tsx";
 import {useState} from "react";
-import {Modal1} from "./cards/Modal1.tsx";
+import {Modal1} from "../cards/Modal1.tsx";
 
-export const MainPage = () => {
+export const ExpPage4 = () => {
 
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
 

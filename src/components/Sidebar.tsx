@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 export const Sidebar = () => {
-  const [isSiren, setIsSiren] = useState(false)
+  const [isSiren, setIsSiren] = useState(true)
 
   const toggleSiren = () => {
     setIsSiren(!isSiren)
