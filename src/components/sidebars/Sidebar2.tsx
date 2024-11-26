@@ -1,16 +1,20 @@
 import {useState} from "react";
+import {useNavigationRoute} from "../../hooks/useNavigationRoute.ts";
 
-export const Sidebar = () => {
+export const Sidebar2 = () => {
   const [isSiren, setIsSiren] = useState(true)
 
   const toggleSiren = () => {
     setIsSiren(!isSiren)
   };
 
+  const {toMain} = useNavigationRoute()
+
+
   return (
     <div className="bg-blue-900 text-white w-20 py-4
     flex flex-col items-center">
-      <div className="mb-20">
+      <div className="mb-20 cursor-pointer"  onClick={toMain}>
         <img src="/univ_logo.png" alt="univLogo"/>
       </div>
 
@@ -21,11 +25,11 @@ export const Sidebar = () => {
           alt="최장혁(202#####53)"/>
       </div>
 
-      <div className="mb-[250px] p-1">
+      <div className="mb-[100px] p-1">
         <img src="/calender.png" alt="calender"/>
       </div>
 
-      <div className="mb-1">
+      <div className="">
         <span
           className="hover:cursor-pointer"
           onClick={toggleSiren}>

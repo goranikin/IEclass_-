@@ -1,4 +1,4 @@
-import {Sidebar} from "../../components/Sidebar.tsx";
+import {Sidebar1} from "../../components/sidebars/Sidebar1.tsx";
 import {Calender} from "../../components/Calender.tsx";
 import {SubjectCards} from "../../components/SubjectCards.tsx";
 import {useState} from "react";
@@ -18,7 +18,7 @@ export const ExpPage1 = () => {
 
   return (
     <div className="flex h-screen w-screen bg-white">
-      <Sidebar/>
+      <Sidebar1/>
       <div className="flex-grow p-6">
         <Calender openModal={openModal}/>
         <SubjectCards openModal={openModal}/>
