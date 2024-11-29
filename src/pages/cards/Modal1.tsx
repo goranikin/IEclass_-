@@ -63,7 +63,7 @@ export const Modal1= ({show, onClose, subjectName}: ModalProps) => {
                 {subjectName} 과제 1: 마감기한 D-5
               </span>
               <span className="mr-5 cursor-pointer">
-                제하기
+                제출하기
               </span>
             </p>
           </div>

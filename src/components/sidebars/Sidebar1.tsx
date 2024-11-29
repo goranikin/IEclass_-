@@ -1,14 +1,30 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useNavigationRoute} from "../../hooks/useNavigationRoute.ts";
 
 export const Sidebar1 = () => {
   const [isSiren, setIsSiren] = useState(true)
 
+  const [startTime, setStartTime] = useState<number>(performance.now());
+  const [, setElapsedTime] = useState<number>(0);
+
   const toggleSiren = () => {
+    if (isSiren) {
+      // Siren이 켜져있을 때 끄면서 시간 계산
+      const timeSpent = (performance.now() - startTime) / 1000;
+      setElapsedTime(timeSpent);
+      alert(`소요 시간: ${timeSpent}초`);
+    } else {
+      setStartTime(performance.now());
+    }
     setIsSiren(!isSiren)
   };
 
   const {toMain} = useNavigationRoute()
+
+
+  useEffect(() => {
+    setStartTime(performance.now());
+  }, []);
 
   return (
     <div className="bg-blue-900 text-white w-20 py-4
