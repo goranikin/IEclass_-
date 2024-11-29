@@ -60,7 +60,16 @@ export const Modal1= ({show, onClose, subjectName}: ModalProps) => {
             <p className="border-gray-200 border-t-[1px] border-b-[1px] p-3
             flex justify-between">
               <span className="ml-10">
-                {subjectName} 과제 1: 마감기한 D-5
+                {subjectName} 과제 1: 마감기한 D-5 (12/7 09:00)
+              </span>
+              <span className="mr-5 cursor-pointer">
+                제출하기
+              </span>
+            </p>
+            <p className="border-gray-200 border-t-[1px] border-b-[1px] p-3
+            flex justify-between">
+              <span className="ml-10">
+                {subjectName} 과제 1: 마감기한 D-7 (12/9 23:59)
               </span>
               <span className="mr-5 cursor-pointer">
                 제출하기
