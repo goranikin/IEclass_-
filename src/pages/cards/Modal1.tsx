@@ -56,7 +56,7 @@ export const Modal1= ({show, onClose, subjectName}: ModalProps) => {
             </p>
           </div>
           <div className="flex-grow">
-            <p className="font-bold mb-3 p-3 border-gray-400 border-b-2">영상 강의 목록</p>
+            <p className="font-bold mb-3 p-3 border-gray-400 border-b-2">과제 목록</p>
             <p className="border-gray-200 border-t-[1px] border-b-[1px] p-3
             flex justify-between">
               <span className="ml-10">
