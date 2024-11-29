@@ -25,7 +25,8 @@ export const Calender = ({
 
         {[...Array(14)].map((_, index) => (
           <div key={index} className='p-[10px] border h-[150px]'>
-            {index + 1}
+            {<span className={`${(index + 1) % 7 === 0 ? "text-blue-600" : ""} ${(index + 1) % 7 === 1 ? "text-red-600" : ""}`}>{index + 1}</span>}
+
             {index + 1 === 5 && (
               <>
                 <div className="border-sky-500 border-[2px] bg-sky-500 bg-opacity-60 m-0.5 text-[14px]
