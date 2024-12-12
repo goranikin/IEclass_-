@@ -48,7 +48,6 @@ export const Modal1= ({show, onClose, subjectName}: ModalProps) => {
               </span>
               <span className="mr-5 cursor-pointer"
                     onClick={() => {
-
                     }}
               >
                 강의 보기

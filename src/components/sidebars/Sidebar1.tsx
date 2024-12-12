@@ -12,7 +12,7 @@ export const Sidebar1 = () => {
       // Siren이 켜져있을 때 끄면서 시간 계산
       const timeSpent = (performance.now() - startTime) / 1000;
       setElapsedTime(timeSpent);
-      alert(`소요 시간: ${timeSpent}초`);
+      alert('통계학 과제2 제출 기한(12월 12일 23:59)이 6시간 남았습니다!');
     } else {
       setStartTime(performance.now());
     }
